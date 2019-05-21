@@ -1,0 +1,53 @@
+<!-- 商品列表 -->
+<view class='goodList'>
+  <checkbox-group bindchange="checkboxChange">
+    <view class='goodBox' wx:for='{{goodList}}' wx:key='key'>
+      <view class='good'>
+        <!-- 未选中 -->
+        <!-- <image src='/images/nochoose_icon.png' class='icon' bindtap='choice' data-index='{{index}}' hidden='{{choice}}'></image> -->
+        <!-- 已选中 -->
+        <!-- <image src='/images/choose_icon.png' class='icon' hidden='{{!choice}}' data-index='{{index}}' bindtap='isChoice'></image> -->
+        <label class="checkbox">
+          <checkbox value="{{index}}" bindtap='bindPickerChange' data-index='{{index}}'  checked='{{item.checked}}' data-index='{{index}}' />
+        </label>
+        <image src='{{item.img}}' class='goodImg'></image>
+        <view class='goodContent'>
+          <view class='goodName'>{{item.goodname}}</view>
+          <view class='specification'>{{item.content}}</view>
+          <view>
+            <view class='goodPrice'>￥{{item.price}}</view>
+            <image src='/images/minus.png' class='minus' bindtap='minus' data-index='{{index}}' data-num='{{item.num}}'></image>
+            <text class='number'>{{item.num}}</text>
+            <image src='/images/add.png' class='add' bindtap='add' data-index='{{index}}'  data-num='{{item.num}}'></image>
+          </view>
+          <view class='picker'>
+            <picker bindchange="bindPickerChange" value="{{ticket[key].youhuiquanid}}" range="{{ticket}}" range-key='youhuiquan' data-index='{{item}}'>
+              {{ticket[key].youhuiquan}}鲜券
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+  </checkbox-group>
+</view>
+
+
+<!-- 底部结算 -->
+<view class='accountBox'>
+  <view class='left'>
+    <!-- 未选中 -->
+    <!-- <image src='/images/nochoose_icon.png' class='all' bindtap='choice' data-index='{{index}}' hidden='{{choice}}'></image> -->
+    <!-- 已选中 -->
+    <!-- <image src='/images/choose_icon.png' class='all' hidden='{{!choice}}' data-index='{{index}}' bindtap='isChoice'></image> -->
+
+    <label class='allCheck' bindtap='select_all'>
+      <checkbox value="{{item.name}}" />
+    </label>
+    <view bindtap='select_all'>{{select_all==false?'全选':'取消'}}</view>
+    <view class='total'>
+      <text decode='true'>合计:&nbsp;<text class='totalPrice'>￥{{totalMoney}}</text></text>
+    </view>
+  </view>
+  <view class='pay' bindtap='buy'>结算</view>
+  <view class='delete' bindtap='deleteGood'>删除</view>
+</view>

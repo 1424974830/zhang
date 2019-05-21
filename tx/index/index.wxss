@@ -1,0 +1,44 @@
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+
+.a {
+    width: 150px;
+      height: 100px;
+      transform: skew(20deg);
+      background: red;
+}
+
+/* .b {
+  width: 0;
+  height: 0;
+  border-right: 100rpx solid burlywood;
+  border-top: 50rpx solid transparent;
+  border-bottom: 50rpx solid transparent;
+} */
+
+.b {  background: yellow;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 0 red;
+
+}
+
+button {
+  background: aquamarine;
+  color: salmon;
+}
+
+.right {
+  float: right;
+  margin-top: 200rpx;
+  margin-right: 20rpx;
+}
+
+.left {
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 50rpx;
+}

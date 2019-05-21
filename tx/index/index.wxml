@@ -1,0 +1,20 @@
+<button bindtap='bian'>点击</button>
+<view class='left'>
+<view class='a' animation="{{animation}}"></view>
+<view class='b' animation="{{animation}}"></view>
+<view class='a' animation="{{animation}}"></view>
+<view class='b' animation="{{animation}}"></view>
+<view class='a' animation="{{animation}}"></view>
+<view class='b' animation="{{animation}}"></view>
+</view>
+
+<view class='right'>
+<view class='b' animation="{{animation}}"></view>
+<view class='a' animation="{{animation}}"></view>
+<view class='b' animation="{{animation}}"></view>
+<view class='a' animation="{{animation}}"></view>
+<view class='b' animation="{{animation}}"></view>
+<view class='a' animation="{{animation}}"></view>
+
+</view>
+

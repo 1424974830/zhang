@@ -1,0 +1,166 @@
+.goodBox {
+  width: 90%;
+  height: 200rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  margin: 20rpx auto;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+}
+
+.goodList{
+  margin-bottom: 120rpx;
+}
+
+.accountBox{
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  color: #808080;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  line-height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 45rpx 40rpx;
+}
+
+.all{
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  margin:30rpx 20rpx;
+}
+
+.allChoice{
+  font-size: 32rpx;
+}
+
+.goodImg{
+  width: 130rpx;
+  height: 130rpx;
+  margin-right: 20rpx;
+}
+
+.good{
+  width:100%;
+  height: 130rpx;
+  display: flex;
+  flex-direction: row;
+}
+.goodContent{
+  width: 60%;
+  height: 130rpx;
+}
+
+.goodName{
+  font-size: 32rpx;
+}
+
+.specification{
+  font-size: 30rpx;
+  color: #767676;
+}
+
+.goodPrice{
+  display: inline-block;
+  width: 60%;
+  margin: 10rpx 0;
+  color: #F24D4D;
+}
+
+.add,.minus{
+  width: 35rpx;
+  height: 35rpx;
+  margin: 0 5rpx;
+}
+
+.number{
+  font-size: 30rpx;
+}
+
+.picker{
+  width: 90%;
+  color: #808080;
+}
+
+.left{
+  width: 60%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+.total{
+  width: 65%;
+  height: 100rpx;
+  line-height: 100rpx;
+  /* background: cadetblue; */
+  text-align: right;
+}
+.total text{
+  font-size: 30rpx;
+}
+.totalPrice{
+  color: #F24D4D;
+}
+.pay{
+  width: 20%;
+  height: 100rpx;
+  background: #F24D4D;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.delete{
+  width: 20%;
+  height: 100rpx;
+  background: #DADADA;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #808080;
+}
+
+
+.allCheck{
+  margin: 0 10rpx;
+}
+.checkbox{
+  margin-top: 45rpx;
+}
+
+/* 重写 checkbox 样式 */
+/* 未选中的 背景样式 */
+checkbox .wx-checkbox-input{
+border-radius: 50%;/* 圆角 */
+width: 40rpx; /* 背景的宽 */
+height: 40rpx; /* 背景的高 */
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+border: 1rpx solid #F24D4D;
+background: #fff;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+border-radius: 50%;/* 圆角 */
+width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+line-height: 40rpx;
+text-align: center;
+font-size:30rpx; /* 对勾大小 30rpx */
+color:#F24D4D; /* 对勾颜色 白色 */
+background: transparent;
+transform:translate(-50%, -50%) scale(1);
+-webkit-transform:translate(-50%, -50%) scale(1);
+}
